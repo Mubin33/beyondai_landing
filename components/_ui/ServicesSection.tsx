@@ -18,7 +18,7 @@ const services: Service[] = [
     title: 'AI App Development',
     description:
       'From iOS and Android native apps to cross-platform solutions, we build scalable mobile applications that deliver exceptional user experiences.',
-    imageSrc: '/home/service.png',
+    imageSrc: '/home/app_img.png',
     imageAlt: 'AI-powered mobile app development',
   },
   {
@@ -26,7 +26,7 @@ const services: Service[] = [
     title: 'Web Development',
     description:
       'We craft high-performance, responsive web applications with modern frameworks and scalable architecture to power your digital presence.',
-    imageSrc: '/home/service.png',
+    imageSrc: '/home/web_img.png',
     imageAlt: 'Modern web development showcase',
   },
 ];
