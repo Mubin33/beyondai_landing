@@ -36,7 +36,7 @@ useEffect(() => {
       <div className="w-full bg-black/10 backdrop-blur-2xl py-1 fixed top-0 z-50">
         <div className="max-w-[1660px] w-11/12 mx-auto flex items-center justify-between">
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={176} height={68} />
+            <Image src="/up_logo.png" alt="logo" width={176} height={68} />
           </Link>
 
           <ul className="hidden lg:flex items-center gap-20">
@@ -167,7 +167,7 @@ useEffect(() => {
         {/* Header with Logo & Close */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={176} height={68} />
+            <Image src="/up_logo.png" alt="logo" width={176} height={68} />
           </Link>
 
           <button
