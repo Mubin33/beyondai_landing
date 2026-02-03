@@ -645,7 +645,7 @@ export default function Testimonial() {
                 i === (index + centerOffset) % testimonials.length;
 
               return (
-                <div key={i} className="w-1/5 px-3 shrink-0">
+                <div key={i} className="w-1/1 md:w-1/3 xl:w-1/5 px-3 shrink-0">
                   <div
                     className={`h-full rounded-2xl border border-white/10 p-8 flex flex-col justify-between transition-all duration-500
                     ${
