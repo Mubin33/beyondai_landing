@@ -4,1207 +4,1177 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const testimonials = [
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
+  },
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
+  },
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
+  },
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
+  },
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
   },
- {
+  {
     name: "Arlene McCoy",
-    role: "Co. Founder",
+    role: "Co-Founder, FitFlow Studio",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    feedback: `Working with this team was one of the best decisions we made for our fitness app. 
+They delivered clean code, beautiful UI/UX, and were extremely responsive even during late-night bug fixes. 
+Our app now has 4.8 stars and 85% retention — couldn't be happier!`,
+    rating: 5,
   },
   {
     name: "Jane Cooper",
-    role: "Marketer",
+    role: "Marketing Director, Evently",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+    feedback: `They understood our vision from day one and turned our rough idea into a polished event discovery app. 
+The attention to detail, smooth animations, and fast delivery were impressive. 
+We've already seen a 3× increase in user engagement since launch.`,
+    rating: 5,
   },
   {
     name: "Leslie Alexander",
-    role: "Admin",
+    role: "CEO, Cleanax Services",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    feedback: `Professional, creative, and deadline-oriented — exactly what we needed. 
+They built our home services platform with great architecture that scales well. 
+The admin panel is super intuitive and our service providers love using it.`,
+    rating: 5,
   },
   {
     name: "Jacob Jones",
-    role: "Co. Founder",
+    role: "Founder, ShadiBiya",
     avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+    feedback: `Building a matrimonial app is not easy — lots of features, security concerns, matching logic... 
+This team handled everything beautifully. Great communication, clean Flutter/React Native code, 
+and they even suggested improvements we hadn't thought of. Highly recommended!`,
+    rating: 5,
   },
   {
     name: "Cody Fisher",
-    role: "Founder",
+    role: "Product Owner, AutoWorld",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  }, 
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
- {
-    name: "Arlene McCoy",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-  },
-  {
-    name: "Jane Cooper",
-    role: "Marketer",
-    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Admin",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-  },
-  {
-    name: "Jacob Jones",
-    role: "Co. Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
-  },
-  {
-    name: "Cody Fisher",
-    role: "Founder",
-    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
-  },
-]; 
+    feedback: `From initial wireframes to App Store launch — the entire process was smooth and transparent. 
+They paid close attention to performance, offline support, and car image loading optimization. 
+Our users are loving the experience and we've already got great early reviews.`,
+    rating: 5,
+  },
+];
 
 export default function Testimonial() {
   const [index, setIndex] = useState(0);
@@ -1267,9 +1237,7 @@ export default function Testimonial() {
                     <div className="flex gap-3 mb-10">
                       <div className="w-1 bg-red-500" />
                       <p className="text-sm leading-relaxed text-gray-300">
-                        The team provided exceptional financial guidance tailored
-                        to my needs. My investments are aimed at ensuring
-                        financial security for the future.
+                        {item.feedback}
                       </p>
                     </div>
 
@@ -1299,19 +1267,6 @@ export default function Testimonial() {
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // "use client";
 
