@@ -11,11 +11,18 @@ export default function Navbar() {
   useEffect(() => setMounted(true), []);
 
   // Disable scroll when sidebar is open
-  useEffect(() => {
-    if (isOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
-    return () => (document.body.style.overflow = "unset");
-  }, [isOpen]);
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "unset";
+  }
+
+  return () => {
+    document.body.style.overflow = "unset"; // <-- wrapped in {}
+  };
+}, [isOpen]);
+
 
   const navLinks = [
     { name: "Home", path: "#home" },
