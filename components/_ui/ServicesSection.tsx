@@ -26,7 +26,7 @@ const services: Service[] = [
     title: 'Web Development',
     description:
       'We craft high-performance, responsive web applications with modern frameworks and scalable architecture to power your digital presence.',
-    imageSrc: '/home/web_img.png',
+    imageSrc: '/home/up_web_img.png',
     imageAlt: 'Modern web development showcase',
   },
 ];
