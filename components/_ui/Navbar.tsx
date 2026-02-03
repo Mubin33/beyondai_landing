@@ -51,27 +51,25 @@ useEffect(() => {
 
           {/* Menu Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Link
+          {/* <Link
   href="#demo"
   className="
     group hidden lg:inline-flex items-center gap-3 
     px-8 py-3 
     bg-[#ff4d00] hover:bg-[#ff6600] 
     text-white font-medium 
-    rounded-full          /* or rounded-4xl if you prefer very rounded */
+    rounded-full      
     transition-colors duration-300 
     text-lg 
     shadow-lg shadow-orange-900/40 
     overflow-hidden
     relative
   "
->
-  {/* Text - stays in place */}
+> 
   <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-10px]">
     Get In Touch
   </span>
-
-  {/* Icon wrapper - moves left on hover */}
+ 
   <div 
     className="
       relative 
@@ -79,11 +77,10 @@ useEffect(() => {
       h-7 w-7 rounded-full 
       bg-black/90 
       transition-all duration-400 
-      group-hover:translate-x-[20px]   /* moves left and slightly out */
+      group-hover:translate-x-[20px]   
       group-hover:scale-90
     "
-  >
-    {/* Original arrow icon - fades out */}
+  > 
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
       width="20" 
@@ -106,9 +103,7 @@ useEffect(() => {
         strokeLinecap="round" 
         strokeLinejoin="round"
       />
-    </svg>
-
-    {/* New arrow icon - comes from right */}
+    </svg> 
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
       width="20" 
@@ -132,7 +127,7 @@ useEffect(() => {
       />
     </svg>
   </div>
-</Link>
+</Link> */}
 
           <div
           onClick={() => setIsOpen(!isOpen)}

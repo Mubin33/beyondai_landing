@@ -43,11 +43,11 @@ export default function Footer() {
 
           {/* center */}
           <div className="space-y-5 flex flex-col">
-            <Link href="#hero" className="text-lg md:text-xl xl:text-2xl text-[#FF5C00] font-medium">Home</Link>
-            <Link href="#about" className="text-lg md:text-xl xl:text-2xl text-white">About us</Link>
-            <Link href="#service" className="text-lg md:text-xl xl:text-2xl text-white">Services</Link>
-            <Link href="#projects" className="text-lg md:text-xl xl:text-2xl text-white">Projects</Link>
-            <Link href="#testimonial" className="text-lg md:text-xl xl:text-2xl text-white">Testimonial</Link>
+            <Link href="/" className="text-lg md:text-xl xl:text-2xl text-[#FF5C00] font-medium">Home</Link>
+            <Link href="/#about" className="text-lg md:text-xl xl:text-2xl text-white">About us</Link>
+            <Link href="/#service" className="text-lg md:text-xl xl:text-2xl text-white">Services</Link>
+            <Link href="/#projects" className="text-lg md:text-xl xl:text-2xl text-white">Projects</Link>
+            <Link href="/#testimonial" className="text-lg md:text-xl xl:text-2xl text-white">Testimonial</Link>
           </div>
 
           {/* right */}

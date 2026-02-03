@@ -7,7 +7,7 @@ export default function GreatTogether() {
         <h1 className='text3xl md:text-5xl xl:text-[76px] font-black font-ubuntu text-center text-white'>Let's Build Something <br /> <span className='text-[#E34400]'>Great Together</span> </h1>
         <h6 className='text-lg md:textxl xl:text-2xl font-normal font-ubuntu text-gray-200 text-center max-w-[700px] mx-auto mt-5'>Ready to transform your digital presence? Let's discuss your project and create something amazing.</h6>
     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
-          <Link
+          {/* <Link
             href="#demo"
             className="
     group
@@ -22,13 +22,10 @@ export default function GreatTogether() {
     overflow-hidden
     relative
   "
-          >
-            {/* Text - stays in place */}
+          > 
             <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-10px]">
              Start Your Project
-            </span>
-
-            {/* Icon wrapper - moves left on hover */}
+            </span> 
             <div
               className="
       relative 
@@ -39,8 +36,7 @@ export default function GreatTogether() {
       group-hover:translate-x-[20px]   
       group-hover:scale-90
     "
-            >
-              {/* Original arrow icon - fades out */}
+            > 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -64,8 +60,7 @@ export default function GreatTogether() {
                   strokeLinejoin="round"
                 />
               </svg>
-
-              {/* New arrow icon - comes from right */}
+ 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -89,7 +84,7 @@ export default function GreatTogether() {
                 />
               </svg>
             </div>
-          </Link>
+          </Link> */}
 
           <Link
             href="#about"

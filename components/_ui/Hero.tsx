@@ -46,7 +46,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <Link
-            href="#demo"
+            href="/projects"
             className="
     group
     inline-flex items-center gap-3 
@@ -63,7 +63,7 @@ export default function Hero() {
           >
             {/* Text - stays in place */}
             <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-[-10px]">
-              Get In Touch
+              Explore Products
             </span>
 
             {/* Icon wrapper - moves left on hover */}
@@ -129,12 +129,12 @@ export default function Hero() {
             </div>
           </Link>
 
-          <Link
+          {/* <Link
             href="/projects"
             className="inline-flex items-center px-8 py-3 border border-[#E34400] hover:border-gray-400 text-gray-200 hover:text-white font-medium rounded-4xl transition-colors duration-300 text-lg"
           >
             Explore Products
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
