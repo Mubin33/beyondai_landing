@@ -36,7 +36,9 @@ useEffect(() => {
       <div className="w-full bg-black/10 backdrop-blur-2xl py-1 fixed top-0 z-50">
         <div className="max-w-[1660px] w-11/12 mx-auto flex items-center justify-between">
           <Link href="/">
-            <Image src="/up_logo.png" alt="logo" width={176} height={68} />
+          {/* <video src="/logo_video_3.mov" className="w-[176px] h-[68px]" autoPlay muted loop></video> */}
+            <Image src="/logo_gif2.gif" alt="logo" width={176} height={68} />
+            {/* <Image src="/up_logo.png" alt="logo" width={176} height={68} /> */}
           </Link>
 
           <ul className="hidden lg:flex items-center gap-20">
@@ -160,7 +162,7 @@ useEffect(() => {
 
       {/* Sidebar / Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-[340px] bg-[#0F0B24] text-white flex flex-col transition-transform duration-500 ease-out ${
+        className={`fixed top-0 right-0 h-full w-[320px] xl:w-[440px] bg-[#0F0B24] text-white flex flex-col transition-transform duration-500 ease-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
