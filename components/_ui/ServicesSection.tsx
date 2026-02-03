@@ -37,7 +37,7 @@ export default function ServicesSection() {
   const activeService = activeTab !== null ? services.find((s) => s.id === activeTab) : null;
 
   return (
-    <section className="relative w-full bg-[#0a0a0f] py-20 ">
+    <section id='service' className="relative w-full bg-[#0a0a0f] py-20 ">
         <img src="/home/ai-hand.png" alt="shade" className='h-[401px] w-[440px] absolute top-20 left-0' />
         <img src="/home/bottom-left-shade.png" alt="shade" className='h-[600px] w-[600px] absolute bottom-0 left-0' />
       <div className="relative z-10 max-w-[1660px] w-11/12 mx-auto px-6 lg:px-8">

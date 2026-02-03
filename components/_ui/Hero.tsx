@@ -130,7 +130,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="#products"
+            href="/projects"
             className="inline-flex items-center px-8 py-3 border border-[#E34400] hover:border-gray-400 text-gray-200 hover:text-white font-medium rounded-4xl transition-colors duration-300 text-lg"
           >
             Explore Products

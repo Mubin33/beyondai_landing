@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function AboutSection() {
@@ -16,11 +17,11 @@ export default function AboutSection() {
                text-transparent bg-clip-text">With 15+ years of App & Web expertise, we design and develop intuitive digital experiences that align user needs with business goals.</h1>
         <div className='flex items-end gap-10 lg:gap-60 mt-20'>
             <Image src="/home/about.png" alt='' width={500} height={570} />
-            <div className='cursor-pointer'>
+            <Link href="/projects" className='cursor-pointer'>
                 <h5 className='text-lg md:text-xl xl:text-2xl font-normal font-ubuntu max-w-[630px] text-[#AAB0C5] mx-auto'>Comprehensive digital services designed to transform your ideas into exceptional products. From research to launch, we've got you covered.</h5>
-            <div className='h-32 w-32 mt-20 rounded-full flex items-center justify-center border text-white text-sm xl:text-base'>Explore <br />
+            <div className='h-32 w-32 mt-20 rounded-full flex items-center justify-center border text-white text-sm xl:text-base'>Explore  <br />
 Our Project</div>
-            </div>
+            </Link>
         </div>
         </div>
     </div>
