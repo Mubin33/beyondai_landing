@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Projects() {
   return (
     <div id='projects' className='bg-[#0A0819] w-full relative'>
-        <img src="/home/top-center-shade.png" alt="shade" className='h-[701px] w-[740px] absolute -top-60 left-[30%]' />
+        <img src="/home/top-center-shade.png" alt="shade" className='h-[701px] w-[740px] absolute -top-60 left-[30%] hidden xl:flex' />
         <img src="/home/left-center-shade.png" alt="shade" className='h-[801px] w-[840px] absolute top-[10%] left-[0%] ' />
         <img src="/home/center-big-shade.png" alt="shade" className='h-[1901px] w-[100vw] absolute top-[40%] left-[0%] z-0' />
         <div className='max-w-[1660px] w-[96%] mx-auto py-20 z-20 relative'>
@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
             </div>
 <div className='mt-20 z-20'>
-                    <Image src="/home/p3.png" alt="project" width={1660} height={970} />
+                    <Image className="mx-auto" src="/home/p3.png" alt="project" width={1660} height={870} />
                     <h6 className='text-base md:text-lg xl:text-xl font-ubuntu font-normal text-[#CCC] mt-9'>Fitness App</h6>
                     <h4 className='text-xl md:text-2xl xl:text-[30px] font-ubuntu font-semibold mt-2 text-white'>motivate</h4>
                 </div>

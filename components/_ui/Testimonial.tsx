@@ -303,6 +303,306 @@ const testimonials = [
     name: "Cody Fisher",
     role: "Founder",
     avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  }, 
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  }, 
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
+  },
+ {
+    name: "Arlene McCoy",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Jane Cooper",
+    role: "Marketer",
+    avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Admin",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Jacob Jones",
+    role: "Co. Founder",
+    avatar: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    name: "Cody Fisher",
+    role: "Founder",
+    avatar: "https://randomuser.me/api/portraits/men/41.jpg",
   },
 ]; 
 

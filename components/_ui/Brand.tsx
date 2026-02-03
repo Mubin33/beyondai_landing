@@ -4,7 +4,7 @@ import React from 'react'
 export default function Brand() {
   return (
     <div className='bg-[#18191B] w-full'>
-        <div className='max-w-[1660px] w-11/12 mx-auto flex items-center gap-32 h-[154px]'>
+        <div className='max-w-[1660px] w-11/12 mx-auto flex flex-wrap items-center gap-20 2xl:gap-36 py-10 '>
             <div className='border-r pr-32 h-full flex flex-col justify-center'>
                 <h4 className='font-ubuntu text-2xl md:text-3xl xl:text-[48px] font-semibold text-[#FFFFFF] '>100+</h4>
                 <p className='font-ubuntu text-sm md:text-base xl:text-xl font-normal text-[#FFFFFF] '>trusted Clients</p>

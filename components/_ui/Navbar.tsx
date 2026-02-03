@@ -25,9 +25,9 @@ useEffect(() => {
 
 
   const navLinks = [
-    { name: "Home", path: "#home" },
-    { name: "About us", path: "#about" },
-    { name: "Projects", path: "#projects" }, 
+    { name: "Home", path: "/" },
+    { name: "About us", path: "/#about" },
+    { name: "Projects", path: "/#projects" }, 
   ];
 
   return (
@@ -54,8 +54,7 @@ useEffect(() => {
           <Link
   href="#demo"
   className="
-    group
-    inline-flex items-center gap-3 
+    group hidden lg:inline-flex items-center gap-3 
     px-8 py-3 
     bg-[#ff4d00] hover:bg-[#ff6600] 
     text-white font-medium 
