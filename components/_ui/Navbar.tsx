@@ -169,7 +169,8 @@ useEffect(() => {
         {/* Header with Logo & Close */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <Link href="/">
-            <Image src="/up_logo.png" alt="logo" width={176} height={68} />
+            {/* <Image src="/up_logo.png" alt="logo" width={176} height={68} /> */}
+            <Image src="/logo_gif2.gif" alt="logo" width={196} height={98} />
           </Link>
 
           <button
